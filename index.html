@@ -4,6 +4,7 @@
 :root{color-scheme:dark;--bg:#111420;--panel:#1c2132;--line:#343b51;--ink:#f4f1eb;--muted:#b5bdd0;--lime:#dcf88c}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 90% 0,#30364b 0,transparent 45%),var(--bg);color:var(--ink);font:17px/1.5 system-ui,sans-serif;min-height:100vh}main,header{max-width:1640px;margin:auto;padding:24px 32px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line)}h1,h2,h3,p{margin:0}h1{font-size:30px;letter-spacing:-1.3px}h2{font-size:clamp(32px,4vw,56px);line-height:1.1;letter-spacing:-1.5px}h3{font-size:21px;line-height:1.25}small,.muted{color:var(--muted)}button,input,select{font:inherit;border:1px solid var(--line);border-radius:12px;min-height:52px;padding:10px 16px;color:var(--ink);background:var(--panel);max-width:100%}button{cursor:pointer;touch-action:manipulation;user-select:none;font-weight:650}button:hover{border-color:var(--lime)}button:active{transform:translateY(1px)}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--lime);outline-offset:3px}button:disabled{opacity:.45;cursor:default}.primary{background:var(--lime);color:#172015;border-color:var(--lime)}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:750;color:var(--lime);margin-bottom:16px}.setup{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;padding-top:7vh}.intro p{max-width:510px;margin:24px 0;color:var(--muted);font-size:20px}.ballot{font-size:70px;color:var(--lime);margin-bottom:22px}.box{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:28px}.player-fields{display:grid;gap:14px;margin:24px 0}.field{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end}.field label{display:grid;gap:6px;min-width:0}.field input{width:100%;background:var(--bg)}.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.error{color:#ffb6b6;min-height:26px}.warning{background:#543617;color:#ffe1ab;padding:14px 24px;border-bottom:1px solid #956632}.scoreboard{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px;margin:0 0 26px}.score{background:var(--panel);padding:16px 20px;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:16px;overflow-wrap:anywhere}.score strong{display:block;font-size:40px;line-height:1.2}.score span{font-weight:650}.overview{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:20px}.progress{width:180px;height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin-top:8px}.progress i{display:block;background:var(--lime);height:100%}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.filters button{font-size:14px;min-height:48px}.filters button[aria-pressed=true]{color:var(--lime);border-color:var(--lime);background:#2d3740}.tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}.tools input{flex:1;min-width:180px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{display:flex;flex-direction:column;background:linear-gradient(140deg,#22293c,#1b2030);border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}.card.claimed{background:#171c29}.card.claimed h3{color:#b8bfd1}.card .meta{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:18px}.points{font-weight:800;color:var(--lime);white-space:nowrap}.penalty{font-size:12px;font-weight:750;border:1px solid #667859;color:#dcf88c;padding:4px 10px;border-radius:20px}.penalty.shot{color:#ffcc95;border-color:#8b6641}.penalty.finish{color:#e5b7ff;border-color:#78588d}.card p{color:var(--muted);margin:14px 0 22px;flex:1}.card button{width:100%}.category-label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}.owner{margin-bottom:12px;font-size:15px;overflow-wrap:anywhere}details{margin:24px 0;color:var(--muted);padding:16px 20px;border:1px solid var(--line);border-radius:14px}summary{cursor:pointer;color:var(--ink);min-height:32px}details p{margin-top:12px}dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:24px;width:min(540px,calc(100% - 24px));padding:28px;max-height:85vh;overflow:auto}dialog::backdrop{background:#090c15cc;backdrop-filter:blur(5px)}dialog h2{font-size:28px;letter-spacing:-.5px}dialog p{color:var(--muted);margin:16px 0}.choices{display:grid;gap:10px;margin:20px 0}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);width:min(580px,calc(100% - 24px));background:#e2f6b1;color:#182318;padding:18px 24px;border-radius:16px;box-shadow:0 10px 50px #0008;z-index:3;pointer-events:none}.toast strong{display:block}.empty{padding:40px;color:var(--muted)}[hidden]{display:none!important}footer{color:var(--muted);font-size:13px;margin-top:32px}@media(min-width:1500px){.cards{grid-template-columns:repeat(4,minmax(0,1fr))}}@media(max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.setup{gap:28px}}@media(max-width:650px){main,header{padding:18px}.setup{grid-template-columns:1fr;padding-top:24px;gap:20px}.ballot{display:none}.intro p{font-size:17px;margin:16px 0}.cards{grid-template-columns:1fr}.card{padding:22px}.box{padding:20px}.scoreboard{grid-template-columns:repeat(2,minmax(0,1fr))}.score{padding:12px}.overview{align-items:start}h1{font-size:25px}header small{font-size:11px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .board-toolbar{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:26px;flex-wrap:wrap}.board-picker{display:grid;gap:6px;min-width:180px;color:var(--muted)}.board-picker select{color:var(--ink)}.full-house{padding:20px;border:1px solid var(--lime);border-radius:16px;color:var(--lime);margin-bottom:24px}.results{max-width:1100px;margin:auto}.results-intro{margin:20px 0;max-width:750px}.result-list{list-style:none;padding:0;margin:24px 0;display:grid;gap:10px}.result-row{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--panel)}.rank{font-size:24px;color:var(--lime);min-width:28px}.result-name{flex:1;min-width:0;overflow-wrap:anywhere}.result-name small{display:block}.result-points{font-size:26px;white-space:nowrap}.result-points small{font-size:14px}.result-panels{display:grid;grid-template-columns:1fr 1fr;gap:20px}.result-panels .box{min-width:0}.result-panels p{margin-top:12px}.input-label{display:block;margin:18px 0 6px}.result-panels input,.result-panels select,.result-panels textarea{width:100%}.result-panels textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px;resize:vertical;line-height:1.6;margin-bottom:16px}.result-panels textarea:focus-visible{outline:3px solid var(--lime);outline-offset:3px}@media(max-width:650px){.result-panels{grid-template-columns:1fr}.result-row{flex-wrap:wrap;gap:12px}.result-points{font-size:22px}.result-row button{margin-left:40px}.overview{flex-wrap:wrap}.scoreboard:has(.score:only-child){grid-template-columns:1fr}}
+#hide-ticked[aria-checked="true"]{background:var(--lime);color:#172015;border-color:var(--lime)}
 </style>
 <header><div><h1>Sips <span style="color:var(--lime)">&amp;</span> Seats</h1><small>NZ Election Night 2026</small></div><button id="new-game" hidden>New Game</button></header>
 <div id="warning" class="warning" role="alert" hidden></div><main id="app"></main>
@@ -22,6 +23,10 @@ let game = null, invalidSave = false, names = [''], activePlayerId = '';
 let category = 'All', status = 'All', search = '', view = 'board', toastTimer;
 
 function valid(g) {
+  if (g && g.mode !== undefined && !['solo', 'shared'].includes(g.mode)) return false;
+  if (g && g.mode === 'solo' && g.players?.length !== 1) return false;
+  if (g && g.mode === 'shared' && g.players?.length < 2) return false;
+  if (g && g.hideTicked !== undefined && typeof g.hideTicked !== 'boolean') return false;
   if (!g || ![1, 2].includes(g.schemaVersion) || !Array.isArray(g.players) || !g.players.length || !Number.isFinite(Date.parse(g.createdAt))) return false;
   const ids = new Set(), playerNames = new Set();
   for (const player of g.players) {
@@ -41,6 +46,10 @@ function valid(g) {
     const ticks = g.ticks[id];
     if (!ticks || typeof ticks !== 'object' || Array.isArray(ticks) ||
       !Object.entries(ticks).every(([cardId, date]) => CATALOGUE.some(card => card.id === cardId) && typeof date === 'string' && Number.isFinite(Date.parse(date)))) return false;
+  }
+  if (g.mode === 'shared') {
+    const claimed = Object.values(g.ticks).flatMap(ticks => Object.keys(ticks));
+    if (new Set(claimed).size !== claimed.length) return false;
   }
   if (!Array.isArray(g.comparisons)) return false;
   const resultIds = new Set();
@@ -84,8 +93,10 @@ function load() {
       delete saved.claims;
       saved.schemaVersion = 2;
       saved.comparisons = [];
+      saved.mode = saved.players.length === 1 ? 'solo' : 'shared';
     }
     game = saved;
+    status = game.hideTicked ? 'To spot' : 'All';
     activePlayerId = game.players[0].id;
     if (migrated) persist();
   } catch (error) {
@@ -139,10 +150,10 @@ document.querySelector('#new-game').onclick = () => modal(
 function setup() {
   app.innerHTML = '<section class="setup"><div class="intro"><div class="ballot" aria-hidden="true">▣ ✓</div>' +
     '<div class="eyebrow">Your sofa. Your election night.</div><h2>Watch the seats.<br>Spot the moment.<br>' +
-    '<span style="color:var(--lime)">Fill your board.</span></h2><p>Election-night bingo, your way. Play solo, pass a device around or compare scores with friends watching from home. Everyone can score the same moment.</p>' +
-    '<small>' + CATALOGUE.length + ' moments · ' + categories.length + ' categories · one board per player</small></div>' +
+    '<span style="color:var(--lime)">Fill your board.</span></h2><p>Election-night bingo, your way. Play solo, pass a device around or compare scores with friends watching from home. One player ticks off moments. Two or more players compete to claim each moment first.</p>' +
+    '<small>' + CATALOGUE.length + ' moments · ' + categories.length + ' categories · solo or shared claiming</small></div>' +
     '<form class="box" id="setup" novalidate><div class="eyebrow">New Game Setup</div><h3>Who’s watching?</h3>' +
-    '<p class="muted">One player is all you need. Add more if you’re sharing this device.</p><div class="player-fields">' +
+    '<p class="muted">One player: solo tick-off. Two or more: shared board, first to spot claims the card.</p><div class="player-fields">' +
     names.map((name, index) => '<div class="field"><label>Player ' + (index + 1) +
       '<input data-name="' + index + '" placeholder="Your name" maxlength="30" autocomplete="off" value="' + esc(name) + '"></label>' +
       '<button type="button" data-remove="' + index + '" aria-label="Remove player ' + (index + 1) + '" ' + (names.length <= 1 ? 'disabled' : '') + '>Remove</button></div>').join('') +
@@ -174,7 +185,7 @@ function setup() {
       return;
     }
     const players = playerNames.map((name, index) => ({id: 'p_' + Date.now().toString(36) + '_' + index + '_' + Math.random().toString(36).slice(2), name}));
-    game = {schemaVersion: 2, createdAt: new Date().toISOString(), players, ticks: Object.fromEntries(players.map(player => [player.id, {}])), comparisons: []};
+    game = {mode: players.length === 1 ? 'solo' : 'shared', schemaVersion: 2, createdAt: new Date().toISOString(), players, ticks: Object.fromEntries(players.map(player => [player.id, {}])), comparisons: []};
     activePlayerId = players[0].id;
     persist();
     render();
@@ -202,8 +213,39 @@ function tickCard(card) {
   toastTimer = setTimeout(() => toast.hidden = true, 5000);
 }
 
+function ownerOf(cardId) {
+  return game.players.find(player => Object.hasOwn(game.ticks[player.id], cardId));
+}
+
+function sharedClaim(card, playerId) {
+  if (game.mode !== 'shared' || ownerOf(card.id) || !game.players.some(player => player.id === playerId)) return;
+  game.ticks[playerId][card.id] = new Date().toISOString();
+  persist();
+  render();
+  const player = game.players.find(player => player.id === playerId);
+  const toast = document.querySelector('#toast');
+  toast.innerHTML = '<strong>' + esc(player.name) + ' +' + card.points + ' points</strong>' +
+    game.players.filter(player => player.id !== playerId).map(player => esc(player.name)).join(', ') + ': ' + esc(card.penalty);
+  toast.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.hidden = true, 6500);
+}
+
+function restoreSharedGame() {
+  modal('Restore shared claiming?', 'Your players and comparison scores will stay. Each card can have one owner. Where several players ticked the same card, the earliest saved tick will keep it (ties go to the first listed player); duplicate points will be removed.', [['Restore shared board', () => {
+    for (const card of CATALOGUE) {
+      const owners = game.players.filter(player => Object.hasOwn(game.ticks[player.id], card.id));
+      owners.sort((a, b) => Date.parse(game.ticks[a.id][card.id]) - Date.parse(game.ticks[b.id][card.id]));
+      for (const player of owners.slice(1)) delete game.ticks[player.id][card.id];
+    }
+    game.mode = 'shared';
+    persist();
+    render();
+  }]]);
+}
+
 function filtered(card) {
-  const ticked = Object.hasOwn(game.ticks[activePlayerId], card.id);
+  const ticked = game.mode === 'shared' ? !!ownerOf(card.id) : Object.hasOwn(game.ticks[activePlayerId], card.id);
   return (category === 'All' || card.category === category) &&
     (status === 'All' || (status === 'Ticked') === ticked) &&
     (card.title + ' ' + card.trigger).toLocaleLowerCase().includes(search.toLocaleLowerCase());
@@ -212,14 +254,30 @@ function filtered(card) {
 function renderCards() {
   const selected = CATALOGUE.filter(filtered);
   document.querySelector('#cards').innerHTML = selected.map(card => {
-    const ticked = Object.hasOwn(game.ticks[activePlayerId], card.id);
+    const owner = game.mode === 'shared' ? ownerOf(card.id) : null;
+    const ticked = game.mode === 'shared' ? !!ownerOf(card.id) : Object.hasOwn(game.ticks[activePlayerId], card.id);
     return '<article class="card ' + (ticked ? 'claimed' : '') + '"><div class="meta"><span class="points">+' + card.points +
       ' pts</span><span class="penalty ' + (card.penalty === 'Shot' ? 'shot' : card.penalty === 'Sip' ? '' : 'finish') +
       '" title="Optional drink">' + esc(card.penalty) + '</span></div><div class="category-label">' + esc(card.category) +
-      '</div><h3>' + esc(card.title) + '</h3><p>' + esc(card.trigger) + '</p><button class="' + (ticked ? '' : 'primary') +
+      '</div><h3>' + esc(card.title) + '</h3><p>' + esc(card.trigger) + '</p>' + (game.mode === 'shared' ?
+      (owner ? '<div class="owner">✓ Claimed by <strong>' + esc(owner.name) + '</strong></div><button data-undo="' + card.id + '">Undo claim</button>' :
+      '<button class="primary" data-claim="' + card.id + '">Claim →</button>') + '</article>' : '<button class="' + (ticked ? '' : 'primary') +
       '" data-tick="' + card.id + '" aria-pressed="' + ticked + '" aria-label="' + (ticked ? 'Undo tick: ' : 'Tick off: ') +
-      esc(card.title) + '">' + (ticked ? '✓ Ticked · Undo' : 'Tick it off →') + '</button></article>';
+      esc(card.title) + '">' + (ticked ? '✓ Ticked · Undo' : 'Tick it off →') + '</button></article>');
   }).join('') || '<p class="empty">No cards match this view.</p>';
+  app.querySelectorAll('[data-claim]').forEach(button => button.onclick = () => {
+    const card = CATALOGUE.find(card => card.id === button.dataset.claim);
+    modal('Who spotted it first?', card.title + ' · ' + card.points + ' points', game.players.map(player => [player.name, () => sharedClaim(card, player.id)]));
+  });
+  app.querySelectorAll('[data-undo]').forEach(button => button.onclick = () => {
+    const card = CATALOGUE.find(card => card.id === button.dataset.undo);
+    modal('Undo this claim?', 'The card becomes available again and its points will be removed.', [['Undo claim', () => {
+      const owner = ownerOf(card.id);
+      if (owner) delete game.ticks[owner.id][card.id];
+      persist();
+      render();
+    }]]);
+  });
   app.querySelectorAll('[data-tick]').forEach(button => button.onclick = () => {
     const card = CATALOGUE.find(card => card.id === button.dataset.tick);
     if (Object.hasOwn(game.ticks[activePlayerId], card.id)) {
@@ -302,29 +360,35 @@ function render() {
   document.querySelector('#new-game').hidden = !game && !invalidSave;
   if (!game) { setup(); return; }
   if (view === 'results') { renderResults(); return; }
-  const count = Object.keys(game.ticks[activePlayerId]).length;
+  if (!game.mode && game.players.length > 1) {
+    app.innerHTML = '<section class="box"><h2>Restore your shared game</h2><p style="margin:24px 0">The previous update gave each player an independent board. Restore one shared board so either player can claim a card, once for the whole game.</p><button class="primary" id="restore-shared">Restore shared claiming</button></section>';
+    document.querySelector('#restore-shared').onclick = restoreSharedGame;
+    return;
+  }
+  const shared = game.mode === 'shared';
+  const count = shared ? CATALOGUE.filter(card => ownerOf(card.id)).length : Object.keys(game.ticks[activePlayerId]).length;
   const player = game.players.find(player => player.id === activePlayerId);
   app.innerHTML = '<section class="scoreboard" aria-label="Player scores">' + game.players.map((person, index) =>
     '<div class="score" style="--accent:hsl(' + ((index * 137.508 + 75) % 360) + ' 72% 75%)"><span>' + esc(person.name) +
     '</span><strong>' + scoreFor(person.id) + ' <small style="font-size:14px">/ ' + MAX_POINTS + ' pts</small></strong></div>').join('') +
-    '</section><div class="board-toolbar"><label class="board-picker">Whose board?<select id="board-player">' +
+    '</section><div class="board-toolbar"><label class="board-picker" ' + (shared || game.players.length === 1 ? 'hidden' : '') + '>Whose board?<select id="board-player">' +
     game.players.map(person => '<option value="' + esc(person.id) + '" ' + (person.id === activePlayerId ? 'selected' : '') + '>' + esc(person.name) + '</option>').join('') +
-    '</select></label><button id="view-results">Results &amp; compare →</button></div><div class="overview"><div>' +
-    '<div class="eyebrow" style="margin:0">' + esc(player.name) + '’s election-night bingo</div><h3>Spot it. Tick it. Build your score.</h3></div>' +
-    '<div><strong>' + count + ' / ' + CATALOGUE.length + ' ticked</strong><div class="progress" aria-hidden="true"><i style="width:' +
+    '</select></label><button id="hide-ticked" role="switch" aria-checked="' + (status === 'To spot') + '">' + (shared ? 'Hide claimed cards' : 'Hide ticked cards') + '</button><button id="view-results">Results &amp; compare →</button></div><div class="overview"><div>' +
+    '<div class="eyebrow" style="margin:0">' + (shared ? 'Shared election-night game' : esc(player.name) + '’s election-night bingo') + '</div><h3>' + (shared ? 'First to spot it takes the points.' : 'Spot it. Tick it. Build your score.') + '</h3></div>' +
+    '<div><strong>' + count + ' / ' + CATALOGUE.length + (shared ? ' claimed' : ' ticked') + '</strong><div class="progress" aria-hidden="true"><i style="width:' +
     (count / CATALOGUE.length * 100) + '%"></i></div></div></div>' +
-    (count === CATALOGUE.length ? '<p class="full-house" role="status">Full house! All ' + CATALOGUE.length + ' moments ticked. You’ve scored ' + MAX_POINTS + ' points!</p>' : '') +
+    (!shared && count === CATALOGUE.length ? '<p class="full-house" role="status">Full house! All ' + CATALOGUE.length + ' moments ticked. You’ve scored ' + MAX_POINTS + ' points!</p>' : '') +
     '<div class="filters" aria-label="Category">' + ['All', ...categories].map((cat, index) => '<button data-category="' + index +
     '" aria-pressed="' + (cat === category) + '">' + (cat === 'All' ? 'All categories' : esc(cat)) + ' <small>(' +
     CATALOGUE.filter(card => cat === 'All' || card.category === cat).length + ')</small></button>').join('') +
-    '</div><div class="tools"><select id="status" aria-label="Tick status">' + ['All', 'To spot', 'Ticked'].map(label =>
-    '<option ' + (label === status ? 'selected' : '') + '>' + label + '</option>').join('') +
+    '</div><div class="tools"><select id="status" aria-label="Card status">' + ['All', 'To spot', 'Ticked'].map(label =>
+    '<option value="' + label + '" ' + (label === status ? 'selected' : '') + '>' + (shared ? ({All: 'All', 'To spot': 'Available', Ticked: 'Claimed'}[label]) : label) + '</option>').join('') +
     '</select><input id="search" aria-label="Search cards" placeholder="Search moments…" value="' + esc(search) +
     '" type="search"><button id="reset-view">Reset view</button></div><section id="cards" class="cards" aria-label="Election moments"></section>' +
-    '<details><summary>How to play &amp; browser saves</summary><p>Tick each moment you spot to earn its points, once per card on your own board. Everyone can score the same card; you don’t have to be first. If one TV moment matches several cards, count one card; separate moments can score separately.</p>' +
-    '<p>Play solo for a personal best or aim for a full house of all ' + CATALOGUE.length + ' moments. If you’re sharing a device, switch boards so each player can tick what they spotted. Each board has its own ticks and score.</p>' +
+    '<details><summary>How to play &amp; browser saves</summary>' + (shared ? '<p>First to spot claims the card. Each card can be claimed only once for the whole game. All other players receive its optional drink penalty. Skip or substitute any drink without losing points. Count only one card per TV moment.</p>' : '<p>Tick each moment you spot to earn its points, once per card on your own board. Everyone can score the same card; you don’t have to be first. If one TV moment matches several cards, count one card; separate moments can score separately.</p>' +
+    '<p>Play solo for a personal best or aim for a full house of all ' + CATALOGUE.length + ' moments. If you’re sharing a device, switch boards so each player can tick what they spotted. Each board has its own ticks and score.</p>') +
     '<p>Playing remotely? Everyone opens this site and starts their own game. Agree when to stop, then use Results &amp; compare to share totals and add friends’ scores. Highest points wins; equal totals tie. Scores don’t sync automatically.</p>' +
-    '<p>The drink prompts are optional for the person ticking the card. Skip or substitute any drink without losing points.</p>' +
+    (shared ? '' : '<p>The drink prompts are optional for the person ticking the card. Skip or substitute any drink without losing points.</p>') +
     '<p>Your game and comparison scores save in this browser at this site address. Use the same browser and address to return. New Game resets this device’s game after confirmation.</p></details>' +
     '<footer>Sips &amp; Seats · Your coverage, your calls.</footer>';
   document.querySelector('#board-player').onchange = event => {
@@ -340,9 +404,22 @@ function render() {
     render();
   };
   app.querySelectorAll('[data-category]').forEach(button => button.onclick = () => { category = ['All', ...categories][+button.dataset.category]; render(); });
-  document.querySelector('#status').onchange = event => { status = event.target.value; renderCards(); };
+  document.querySelector('#hide-ticked').onclick = () => {
+    status = status === 'To spot' ? 'All' : 'To spot';
+    game.hideTicked = status === 'To spot';
+    persist();
+    render();
+    document.querySelector('#hide-ticked').focus({preventScroll: true});
+  };
+  document.querySelector('#status').onchange = event => {
+    status = event.target.value;
+    game.hideTicked = status === 'To spot';
+    persist();
+    document.querySelector('#hide-ticked').setAttribute('aria-checked', String(game.hideTicked));
+    renderCards();
+  };
   document.querySelector('#search').oninput = event => { search = event.target.value; renderCards(); };
-  document.querySelector('#reset-view').onclick = () => { category = 'All'; status = 'All'; search = ''; render(); };
+  document.querySelector('#reset-view').onclick = () => { category = 'All'; status = 'All'; search = ''; game.hideTicked = false; persist(); render(); };
   renderCards();
 }
 

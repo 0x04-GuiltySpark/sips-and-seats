@@ -1,30 +1,28 @@
 # Sips & Seats
 
-A free browser bingo game for NZ Election Night 2026. Play solo, share a device or compare scores with friends watching remotely. Tick off 40 election-night moments and aim for the highest score or a full house. Drinks are always optional.
+A free browser game for NZ Election Night 2026. Play solo, compete on one shared device or compare scores with friends watching remotely. There are 40 election-night moments. Drinks are always optional.
 
 [**Play Sips & Seats**](https://0x04-guiltyspark.github.io/sips-and-seats/)
 
 ## How to play
 
-1. Enter your name and start a game. One player is enough; add more if you’re sharing a device.
-2. Tick off the moments you spot. Each card scores once per player, and everyone can score the same card. You don’t have to be first. Tap a ticked card again to undo it.
-3. If sharing a device, use **Whose board?** to switch between each player’s independent ticks and score.
-4. Play for a personal best, aim to tick all 40 moments for a full house, or compare totals with friends. The drink prompts are optional for the person ticking the card; skipping or substituting never costs points.
+Enter one name for a solo tick-off game, or two or more names for a shared claiming game.
 
-Filter cards by category or tick status, or search for a particular moment. If one TV moment matches several cards, count one card; separate moments can score separately.
+- **Solo:** tick each moment once to earn its points. Tap a ticked card to undo it. Drink prompts are optional for you.
+- **Shared:** the first player to spot a moment claims its card using the player picker. Each card has one owner for the entire game. The claimant earns the points and all other players receive the optional drink penalty. Undo claim asks for confirmation before making the card available again.
+
+Use the toggle at the top to hide ticked or claimed cards. The setting saves automatically; turn it off to see completed cards and undo them. Category, status and search filters work alongside it. Reset view clears the filters and turns the toggle off without changing scores. If one TV moment matches several cards, count one card; separate moments can score separately. Skipping or substituting drinks never costs points.
 
 ## Playing remotely
 
-Everyone opens the site and starts their own game on their own device. Agree when to stop, then open **Results & compare** and copy your score into your group chat. Enter friends’ reported names and point totals to see the rankings. Highest points wins; equal totals tie. Comparison scores can be removed and re-entered to update them.
-
-There are no accounts, shared rooms or automatic score syncing. Each device keeps its own game and comparison table, and you can return to your board at any time.
+Everyone opens the site and starts their own game. Agree when to stop, then open **Results & compare** and copy your score into your group chat. Enter friends’ reported names and totals to see rankings. Highest points wins; equal totals tie. Comparison scores can be removed and re-entered to update them. There are no accounts, shared rooms or automatic score syncing.
 
 ## Your game stays in your browser
 
-Players, ticks and comparison scores save automatically in browser storage. Return using the same browser and site address to continue. Games do not sync between devices or browsers, and clearing site data removes the save. **New Game** asks for confirmation before resetting it. Existing games retain their players and earned points when updated to independent boards.
+Players, claims or ticks, comparison scores and the hide-completed preference save automatically in browser storage. Return using the same browser and address to continue. Clearing site data removes the save. New Game asks for confirmation before resetting it. Storage failures display a warning and play continues in memory.
 
-The game has no backend, accounts, analytics or external requests. If browser saving is unavailable, a warning appears and the game continues in memory.
+Original shared-game saves retain their claim owners. Multi-player saves from the independent-board update offer **Restore shared claiming**, with confirmation before conversion. Where several players ticked the same card, the earliest saved tick keeps ownership; equal timestamps go to the first listed player. Duplicate points are removed, while players and comparison scores remain. Cancel leaves the existing save unchanged.
 
 ## Hosting
 
-All game code, styles and card data are included in `index.html`, with no dependencies or build step. GitHub Pages publishes the repository root from `main`; pushes to that branch update the public site. The page can also be served by any static web host.
+All game code, styles and card data are included in `index.html`, with no dependencies or build step. GitHub Pages publishes the repository root from `main`; pushes to that branch update the public site. The page can also be served by any static web host. There is no backend, analytics or external request dependency.
