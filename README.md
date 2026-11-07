@@ -1,6 +1,6 @@
 # Sips & Seats
 
-A free browser game for NZ Election Night 2026. Gather two or more players around one shared device, watch the coverage and compete to spot 38 election-night moments. Drinks are always optional.
+A free browser game for NZ Election Night 2026. Gather two or more players around one shared device, watch the coverage and compete to spot 40 election-night moments. Drinks are always optional.
 
 [**Play Sips & Seats**](https://0x04-guiltyspark.github.io/sips-and-seats/)
 
